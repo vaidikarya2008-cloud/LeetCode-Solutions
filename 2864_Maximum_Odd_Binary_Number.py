@@ -1,4 +1,9 @@
+# LeetCode 2864
+# Maximum Odd Binary Number
+# Difficulty: Easy
+
 class Solution:
+    ...class Solution:
     def maximumOddBinaryNumber(self, s: str) -> str:
         lst = list(map(int, s))
         count1 = 0
