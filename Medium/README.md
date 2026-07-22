@@ -1,1 +1,0 @@
-Medium LeetCode solutions.
