@@ -3,7 +3,13 @@ class Solution:
         ans = set()
 
         for i in range(len(nums)):
-            ans.add(nums[i])
-            ans.add(int(str(nums[i])[::-1]))
+            if nums[i] not in ans:
+                ans.add(nums[i])
+
+        for i in range(len(nums)):
+            r = int(str(nums[i])[::-1])
+
+            if r not in ans:
+                ans.add(r)
 
         return len(ans)
