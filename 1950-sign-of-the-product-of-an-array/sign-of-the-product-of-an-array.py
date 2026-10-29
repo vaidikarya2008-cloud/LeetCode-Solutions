@@ -1,19 +1,13 @@
 class Solution:
     def arraySign(self, nums: list[int]) -> int:
-        checkminus = 0
-        checkzero = 0
+        product = 1
 
-        for i in range(len(nums)):
-            if nums[i] == 0:
-                checkzero += 1
-            elif nums[i] > 0:
-                continue
-            else:
-                checkminus += 1
+        for i in nums:
+            product *= i
 
-        if checkzero > 0:
+        if product == 0:
             return 0
-        if checkminus % 2 == 0:
+        elif product > 0:
             return 1
         else:
             return -1
